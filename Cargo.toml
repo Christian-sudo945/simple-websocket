@@ -1,0 +1,17 @@
+[package]
+name = "tcpsocket"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
+tungstenite = "0.20.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
